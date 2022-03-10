@@ -28,7 +28,7 @@ public class AfishaManager {
             resultLenght = movies.length;
         Movie[] result = new Movie[resultLenght];
         for (int i = 0; i < resultLenght; i++) {
-            int cell = movies.length -i -1;
+            int cell = movies.length - i - 1;
             result[i] = movies[cell];
         }
         return result;

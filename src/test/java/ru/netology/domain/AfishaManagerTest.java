@@ -69,11 +69,11 @@ class AfishaManagerTest {
         Movie[] expected = new Movie[]{
                 tenth, ninth, eighth, seventh, sixth, fifth, fourth, third, second, first};
 
-        assertArrayEquals(expected,afisha.showMovies());
+        assertArrayEquals(expected, afisha.showMovies());
     }
 
     @Test
-    void shouldShowMoviesUnderTen(){
+    void shouldShowMoviesUnderTen() {
         Movie first = new Movie(1, "Бладшот", "Боевик", false);
         Movie second = new Movie(2, "Вперед", "Мультфильм", false);
         Movie third = new Movie(3, "Отель Белград", "Комедия", false);
@@ -91,11 +91,11 @@ class AfishaManagerTest {
         Movie[] expected = new Movie[]{
                 sixth, fifth, fourth, third, second, first};
 
-        assertArrayEquals(expected,afisha.showMovies());
+        assertArrayEquals(expected, afisha.showMovies());
     }
 
     @Test
-    void shouldShowMoviesBelowTenCurrentMoviesLenght(){
+    void shouldShowMoviesBelowTenCurrentMoviesLenght() {
 
         AfishaManager afisha = new AfishaManager(6);
 
@@ -122,8 +122,8 @@ class AfishaManagerTest {
         afisha.add(tenth);
 
         Movie[] expected = new Movie[]{
-                tenth,ninth,eighth,seventh,sixth,fifth};
+                tenth, ninth, eighth, seventh, sixth, fifth};
 
-        assertArrayEquals(expected,afisha.showMovies());
+        assertArrayEquals(expected, afisha.showMovies());
     }
 }
